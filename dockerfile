@@ -12,5 +12,4 @@ RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm && \
 
 EXPOSE 9292
 
-VOLUME 
 ENTRYPOINT ["./app/sspa", "server"]
