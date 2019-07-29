@@ -7,7 +7,8 @@ COPY . ./app
 RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm && \
     yum -y update && \
     yum install -y python36u python36u-libs python36u-devel python36u-pip && \
-    yum install -y which
+    yum install -y which && \
+    pip install awscli
 
 EXPOSE 9292
 
